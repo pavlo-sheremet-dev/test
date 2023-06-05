@@ -2,7 +2,7 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/goit-react-hw-05-movies/",
+  "homepage": "https://pavlo-sheremet-dev.github.io/test/",
   "dependencies": {
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",

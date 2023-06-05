@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.3a8c16cf.js",
-    "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.3a8c16cf.js.map": "/goit-react-hw-05-movies/static/js/main.3a8c16cf.js.map"
+    "main.css": "/test/static/css/main.1876b9f0.css",
+    "main.js": "/test/static/js/main.33b77989.js",
+    "static/js/485.0060028e.chunk.js": "/test/static/js/485.0060028e.chunk.js",
+    "static/js/153.a0819f70.chunk.js": "/test/static/js/153.a0819f70.chunk.js",
+    "static/js/787.0c3f432a.chunk.js": "/test/static/js/787.0c3f432a.chunk.js",
+    "static/media/keyboard.jpg": "/test/static/media/keyboard.35dc37c0d77c2e08736a.jpg",
+    "static/media/picture-question.png": "/test/static/media/picture-question.032662a2a907475127d7.png",
+    "static/media/logo.svg": "/test/static/media/logo.89604f2827917106f320d36dad457a91.svg",
+    "index.html": "/test/index.html",
+    "main.1876b9f0.css.map": "/test/static/css/main.1876b9f0.css.map",
+    "main.33b77989.js.map": "/test/static/js/main.33b77989.js.map",
+    "485.0060028e.chunk.js.map": "/test/static/js/485.0060028e.chunk.js.map",
+    "153.a0819f70.chunk.js.map": "/test/static/js/153.a0819f70.chunk.js.map",
+    "787.0c3f432a.chunk.js.map": "/test/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.3a8c16cf.js"
+    "static/css/main.1876b9f0.css",
+    "static/js/main.33b77989.js"
   ]
 }

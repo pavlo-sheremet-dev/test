@@ -1,10 +1,10 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import AppBar from './AppBar/AppBar';
 import { Suspense } from 'react';
-import FallBackLoader from './FallBackLoader/FallBackLoader';
+// import FallBackLoader from './FallBackLoader/FallBackLoader';
 
 const SharedLayout = () => {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <>
       <AppBar />

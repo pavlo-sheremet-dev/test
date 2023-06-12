@@ -2,7 +2,7 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pavlo-sheremet-dev.github.io/test/",
+  "homepage": "https://enchanting-lamington-b424ba.netlify.app/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",

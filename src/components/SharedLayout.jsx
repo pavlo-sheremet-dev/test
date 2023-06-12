@@ -8,7 +8,7 @@ const SharedLayout = () => {
   return (
     <>
       <AppBar />
-      <Suspense fallback={<FallBackLoader />} key={location.pathname}>
+      <Suspense fallback={<FallBackLoader />} key={location.key}>
         <Outlet />
       </Suspense>
     </>

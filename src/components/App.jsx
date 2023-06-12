@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import SharedLayout from './SharedLayout';
 import PrivateRoute from './PrivateRoute';
 import RestrictedRoute from './RestrictedRoute';
@@ -48,6 +48,7 @@ export const App = () => {
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
         />
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
   );

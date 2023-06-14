@@ -29,7 +29,7 @@ export const App = () => {
         <Route
           index
           element={
-            <Suspense fallback={<div>...loading</div>}>
+            <Suspense fallback={<div>...loading</div>} key={'/'}>
               <HomePage />
             </Suspense>
           }
@@ -40,7 +40,7 @@ export const App = () => {
             <RestrictedRoute
               redirectTo="/contacts"
               component={
-                <Suspense fallback={<div>...loading</div>}>
+                <Suspense fallback={<div>...loading</div>} key={'/register'}>
                   <RegisterPage />
                 </Suspense>
               }
@@ -53,7 +53,7 @@ export const App = () => {
             <RestrictedRoute
               redirectTo="/contacts"
               component={
-                <Suspense fallback={<div>...loading</div>}>
+                <Suspense fallback={<div>...loading</div>} key={'/login'}>
                   <LoginPage />
                 </Suspense>
               }
@@ -66,7 +66,7 @@ export const App = () => {
             <PrivateRoute
               redirectTo="/login"
               component={
-                <Suspense fallback={<div>...loading</div>}>
+                <Suspense fallback={<div>...loading</div>} key={'/contacts'}>
                   <ContactsPage />
                 </Suspense>
               }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes, Navigate } from 'react-router-dom';
@@ -26,26 +26,51 @@ export const App = () => {
   ) : (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
-        <Route index element={<HomePage />} />
+        <Route
+          index
+          element={
+            <Suspense fallback={<div>...loading</div>}>
+              <HomePage />
+            </Suspense>
+          }
+        />
         <Route
           path="/register"
           element={
             <RestrictedRoute
               redirectTo="/contacts"
-              component={<RegisterPage />}
+              component={
+                <Suspense fallback={<div>...loading</div>}>
+                  <RegisterPage />
+                </Suspense>
+              }
             />
           }
         />
         <Route
           path="/login"
           element={
-            <RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
+            <RestrictedRoute
+              redirectTo="/contacts"
+              component={
+                <Suspense fallback={<div>...loading</div>}>
+                  <LoginPage />
+                </Suspense>
+              }
+            />
           }
         />
         <Route
           path="/contacts"
           element={
-            <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
+            <PrivateRoute
+              redirectTo="/login"
+              component={
+                <Suspense fallback={<div>...loading</div>}>
+                  <ContactsPage />
+                </Suspense>
+              }
+            />
           }
         />
         <Route path="*" element={<Navigate to="/" />} />

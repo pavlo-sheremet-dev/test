@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import AppBar from './AppBar/AppBar';
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 // import FallBackLoader from './FallBackLoader/FallBackLoader';
 
 const SharedLayout = () => {
@@ -8,9 +8,9 @@ const SharedLayout = () => {
   return (
     <>
       <AppBar />
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
+      {/* <Suspense fallback={null}> */}
+      <Outlet />
+      {/* </Suspense> */}
     </>
   );
 };
